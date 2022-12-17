@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 
 def get_currency_rates (from_currency, to_currency):
     '''
-    Функция для получения курса валют за прошедшие 7 дней.
-    Валюты принимаются на вход в виде трехбуквенных аббревиатур (согласно API fixer.io) 
-    apikey - ключ получаем при регистрации на fixer.io
-    end_date - сегодняшняя дата, например 2022-12-17
-    start_date - дата 7 дней назад
+    Function to get exchange rates for the last seven days
+    apikey - API key that you can get on fixer.io
+    from_currency, to_currency - three-letter currency codes of your preferred base currency (see fixer.io API docs at https://fixer.io/documentation)
+    end_date - today date, example: 2022-12-17
+    start_date - date seven days before
     '''
     headers= {
         "apikey": "***"
